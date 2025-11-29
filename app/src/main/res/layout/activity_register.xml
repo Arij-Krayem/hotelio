@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Titre (Hotelio) -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotelio"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#FF9800"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Champ Nom complet -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Nom complet"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#AAAAAA"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Champ Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Adresse e-mail"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#AAAAAA"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Champ Mot de passe -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#AAAAAA"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Bouton Créer un compte -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Créer un compte"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF9800"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Lien pour aller à la connexion -->
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Déjà un compte ? Se connecter"
+            android:textColor="#1E88E5"
+            android:textSize="14sp"
+            android:layout_marginBottom="40dp" />
+
+    </LinearLayout>
+</ScrollView>

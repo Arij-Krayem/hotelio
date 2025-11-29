@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- HEADER -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:text="Bienvenue chez Hotelio"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- SEARCH BAR -->
+    <EditText
+        android:id="@+id/etSearch"
+        android:hint="Rechercher une chambre..."
+        android:padding="12dp"
+        android:background="@drawable/rounded_white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+
+    <!-- FILTER BAR -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:background="@drawable/rounded_white"
+            android:layout_marginRight="8dp"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"/>
+
+        <Spinner
+            android:id="@+id/spinnerPrice"
+            android:background="@drawable/rounded_white"
+            android:layout_marginRight="8dp"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"/>
+
+        <Spinner
+            android:id="@+id/spinnerAvailability"
+            android:background="@drawable/rounded_white"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!-- LISTE DES CHAMBRES -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerRooms"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
