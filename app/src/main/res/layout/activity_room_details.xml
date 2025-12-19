@@ -69,7 +69,7 @@
             android:id="@+id/roomDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Description de la chambre..."
+            android:text="chambre pour une nuit comfort"
             android:textSize="15sp"
             android:textColor="#444"
             android:lineSpacingExtra="4dp"

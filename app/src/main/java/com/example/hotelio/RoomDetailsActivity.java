@@ -57,7 +57,7 @@ public class RoomDetailsActivity extends AppCompatActivity {
                     .into(roomImage);
         }
 
-        // 👉 Reserve button (LOGIN REQUIRED)
+        //  Reserve button (LOGIN REQUIRED)
         btnReserve.setOnClickListener(v -> {
 
             Toast.makeText(

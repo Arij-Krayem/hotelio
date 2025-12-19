@@ -33,7 +33,7 @@
             android:id="@+id/et_search"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:hint="Search for city, hotel or job"
+            android:hint="Search for hotel"
             android:background="@drawable/edittext_bg"
             android:drawablePadding="10dp"
             android:paddingStart="16dp"
@@ -55,6 +55,7 @@
 
         <!-- Hotels -->
         <LinearLayout
+            android:id="@+id/layoutHotels"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FFF3E0"
@@ -64,7 +65,8 @@
             android:orientation="horizontal"
             android:gravity="center_vertical">
 
-            <ImageView
+
+        <ImageView
                 android:layout_width="85dp"
                 android:layout_height="66dp"
                 android:layout_marginEnd="12dp"
@@ -81,16 +83,19 @@
 
         <!-- Apartments -->
         <LinearLayout
+            android:id="@+id/layoutApartments"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFE0B2"
+            android:background="#FFF3E0"
             android:padding="16dp"
             android:layout_marginBottom="24dp"
             android:elevation="4dp"
             android:orientation="horizontal"
             android:gravity="center_vertical">
 
-            <ImageView
+
+
+        <ImageView
                 android:layout_width="85dp"
                 android:layout_height="83dp"
                 android:layout_marginEnd="12dp"
