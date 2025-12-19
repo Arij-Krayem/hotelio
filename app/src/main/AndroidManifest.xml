@@ -30,6 +30,8 @@
         <!-- Main screens -->
         <activity android:name=".HomeActivity" />
         <activity android:name=".RoomDetailsActivity" />
+        <activity android:name=".BookingActivity" />
+
 
     </application>
 

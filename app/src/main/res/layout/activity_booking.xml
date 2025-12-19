@@ -35,7 +35,7 @@
                 android:id="@+id/roomTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Chambre Deluxe"
+                android:text="Sunrise Palace Hotel"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:textColor="#000000" />
@@ -45,7 +45,7 @@
                 android:id="@+id/roomPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="120 DT / nuit"
+                android:text="150 DT / nuit"
                 android:textSize="18sp"
                 android:textColor="#FF6F00"
                 android:layout_marginTop="4dp" />
