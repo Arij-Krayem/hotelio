@@ -10,21 +10,27 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Hotelio">
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+        android:theme="@style/Theme.Hotelio"
+        tools:targetApi="31">
+
+        <!-- Splash screen (APP STARTS HERE) -->
         <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity" />
+
+        <!-- Auth -->
         <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+
+        <!-- Main screens -->
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".RoomDetailsActivity" />
+
     </application>
 
 </manifest>

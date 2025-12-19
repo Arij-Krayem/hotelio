@@ -1,69 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:background="#F5F5F5"
-    android:padding="16dp"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
 
-    <!-- HEADER -->
-    <TextView
-        android:id="@+id/tvWelcome"
-        android:text="Bienvenue chez Hotelio"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="#333"
-        android:layout_marginBottom="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <!-- SEARCH BAR -->
-    <EditText
-        android:id="@+id/etSearch"
-        android:hint="Rechercher une chambre..."
-        android:padding="12dp"
-        android:background="@drawable/rounded_white"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"/>
-
-    <!-- FILTER BAR -->
     <LinearLayout
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="12dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-        <Spinner
-            android:id="@+id/spinnerType"
-            android:background="@drawable/rounded_white"
-            android:layout_marginRight="8dp"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_weight="1"/>
+        <!-- Header -->
+        <TextView
+            android:text="Where Would You"
+            android:textSize="14sp"
+            android:textColor="#8D6E63"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-        <Spinner
-            android:id="@+id/spinnerPrice"
-            android:background="@drawable/rounded_white"
-            android:layout_marginRight="8dp"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_weight="1"/>
+        <TextView
+            android:text="Like to Go?"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#E65100"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-        <Spinner
-            android:id="@+id/spinnerAvailability"
-            android:background="@drawable/rounded_white"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_weight="1"/>
+        <!-- Search Bar -->
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Search for city, hotel or job"
+            android:background="@drawable/edittext_bg"
+            android:drawablePadding="10dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#4E342E"
+            android:textColorHint="#BCAAA4"
+            android:textSize="15sp"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Categories Title -->
+        <TextView
+            android:text="Categories"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#E65100"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Hotels -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF3E0"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="85dp"
+                android:layout_height="66dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/peni" />
+
+            <TextView
+                android:text="Hotels"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#E65100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Apartments -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFE0B2"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="4dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="85dp"
+                android:layout_height="83dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/apartm" />
+
+            <TextView
+                android:text="Apartments"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#E65100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- ACTION BUTTONS (IMPORTANT) -->
+
+        <Button
+            android:id="@+id/btnViewRooms"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="View Rooms"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF9800"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnMyReservations"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="My Reservations"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FB8C00" />
+
     </LinearLayout>
-
-    <!-- LISTE DES CHAMBRES -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerRooms"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
-</LinearLayout>
+</ScrollView>

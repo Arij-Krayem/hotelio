@@ -6,16 +6,17 @@ import android.os.Bundle;
 import android.os.Handler;
 
 public class SplashActivity extends Activity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        // Attente de 3 secondes avant de passer à la page de connexion
+        // Attente de 3 secondes puis redirection vers Home
         new Handler().postDelayed(() -> {
-            startActivity(new Intent(SplashActivity.this, LoginActivity.class));
+            Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
+            startActivity(intent);
             finish();
         }, 3000);
     }
 }
-

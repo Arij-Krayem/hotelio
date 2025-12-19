@@ -1,23 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#FFFFFF">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mes Réservations"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="#FF9800"
-        android:gravity="center"
-        android:padding="16dp" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <ListView
-        android:id="@+id/listMyBookings"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</LinearLayout>
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mes Réservations"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FF9800"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Booking Item 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFF3E0"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            android:gravity="center_vertical"
+            android:clipToOutline="true">
+
+            <!-- Hotel Image Placeholder -->
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/deluxe"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="16dp"/>
+
+            <!-- Hotel Details -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rosewood Villa Magna"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check-in: 01 Jan 2026"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$120/night"
+                    android:textSize="14sp"
+                    android:textColor="#FF9800"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Booking Item 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFF3E0"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:gravity="center_vertical"
+            android:clipToOutline="true">
+
+            <!-- Hotel Image Placeholder -->
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/lala"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="16dp" />
+
+            <!-- Hotel Details -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Baccarat Suite "
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check-in: 05 Jan 2026"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$180/night"
+                    android:textSize="14sp"
+                    android:textColor="#FF9800"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

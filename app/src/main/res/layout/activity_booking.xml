@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/default_room" />
+            android:src="@drawable/room" />
 
         <!-- CARD -->
         <LinearLayout
@@ -92,8 +92,9 @@
                 android:text="Réserver maintenant"
                 android:textSize="18sp"
                 android:layout_marginTop="25dp"
-                android:background="@drawable/rounded_orange"
-                android:textColor="@android:color/white"/>
+                android:backgroundTint="#F57C00"
+                android:textColor="#FFFFFF"/>
+
 
         </LinearLayout>
     </LinearLayout>
